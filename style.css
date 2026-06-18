@@ -10,6 +10,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.5s;
 }
 
 body {
@@ -34,10 +35,23 @@ h1 {
 
 p {
     position: absolute;
-    background-color: blanchedalmond;
     left: 0;
     bottom: 0px;
     margin: 0px;
     width: 100%;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(to top, rgb(84, 81, 81), transparent);
+    color: rgb(226, 234, 234);
+    font-size: 23px;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+.block:hover p {
+    transform: translateY(0%);
+}
+.block:hover img {
+    transform: scale(1.2);
+    filter: brightness(80%);
 }
